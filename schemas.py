@@ -14,6 +14,10 @@ class Location(LocationBase):
     class Config:
         from_attributes = True
 
+class LocationUpdate(BaseModel):
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
+
 class CategoryBase(BaseModel):
     name: str
 
