@@ -13,6 +13,7 @@ PORT = os.getenv("DB_PORT")
 NAME = os.getenv('DB_NAME')
 # Configura tu conexión a PostgreSQL
 SQLALCHEMY_DATABASE_URL = f"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{NAME}"
+# SQLALCHEMY_DATABASE_URL_TEST = f"postgresql://{USER}:{PASSWORD}@{HOST}:5433/db-test"
 
 # Crea el motor de SQLAlchemy
 engine = create_engine(SQLALCHEMY_DATABASE_URL)

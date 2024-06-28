@@ -34,5 +34,5 @@ RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Comando para iniciar el servidor FastAPI
-CMD ["/usr/local/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["/usr/local/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--root-path", "/api/v1", "--reload"]
 

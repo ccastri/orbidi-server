@@ -24,7 +24,10 @@ class Category(CategoryBase):
     id: int
     class Config:
         from_attributes = True
+class CategoryUpdate(BaseModel):
+    name: Optional[str] = None
 
+    
 class LocationCategoryReviewBase(BaseModel):
     location_id: int
     category_id: int
